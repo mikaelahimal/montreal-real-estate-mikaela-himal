@@ -268,14 +268,41 @@ header .branding {
 
  h2 + h3 { margin: 1.4em 0 1em 0;}
 
- label {}
+ h2:has(+ p) {
+  margin: 0 0 0.347em;
+}   
 
- legend {}
+h2:has(+ img) {
+   margin: 0 0 0.667em; /* pictures look better with more space above */
+} 
+
+h2 + ol {
+  margin: 2rem 0 0 2rem 0;  /* margins for the ol */
+  }
+
+h2 + table {
+  margin: 0.5rem 0 0 2rem 0;   /* margins for the table */
+} 
+
+h2 + h3 {
+  margin: 0.25rem 0 0 2rem 0;  /* margins for the h3 */
+}       
+
+ label {font-size: 1.5811em;}  /* h4 */
+
+ legend {font-size: 1.842em; }  /* h3 */
 
 
   figure {}
   
-  figcaption {}
+  figcaption {
+    font-size: .8584em;
+    text-align: right;
+    font-style: italic;
+    margin-top: 0;
+    position: relative; /* when margins are zero, you can still tweak */
+    top: -0.3rem;
+  }  /* small */
   
   h2+p {}
   
@@ -373,7 +400,15 @@ header .branding {
 .aligncenter {text-align: center;}  
 
 
+ul {
+  margin: 1rem 0 1rem 2rem;  /* note the 2rem at left */
+  list-style-type: disc;
+}
 
+ol {
+  margin: 1rem 0 1rem 2rem;
+  list-style-type: decimal;
+}
 
 
 
@@ -454,7 +489,11 @@ ul#menu {
     small { font-size: .8327em; }
   /* READJUST FONT SCALE BECAUSE YOU HAVE MORE ROOM NOW */  
 
+  label {font-size: 1.8863em;}   /* h4 */
 
+  legend {font-size: 2.3306em; } /* h3 */
+ 
+  figcaption {font-size: .8093em;}  /* small */
 
 /*  CHOOSE ONE OF THESE TWO OPTIONS */
 
