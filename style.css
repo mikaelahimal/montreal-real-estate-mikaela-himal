@@ -177,7 +177,7 @@
   h1,h2,h3,h4,h5,h6,label,legend {
     font-family: var(--titles-font);
     color: var(--titles-color);
-    font-optical-sizing: auto;
+    /* font-optical-sizing: auto; */
     font-weight: 600;
     font-style: normal;
   }
@@ -277,15 +277,15 @@ h2:has(+ img) {
 } 
 
 h2 + ol {
-  margin: 2rem 0 0 2rem 0;  /* margins for the ol */
+  margin: 2rem 0 2rem 0;  /* margins for the ol */
   }
 
 h2 + table {
-  margin: 0.5rem 0 0 2rem 0;   /* margins for the table */
+  margin: 0.5rem 0 2rem 0;   /* margins for the table */
 } 
 
 h2 + h3 {
-  margin: 0.25rem 0 0 2rem 0;  /* margins for the h3 */
+  margin: 0.25rem 0 2rem 0;  /* margins for the h3 */
 }       
 
  label {font-size: 1.5811em;}  /* h4 */
